@@ -1,4 +1,4 @@
 # Events
-a platform where students can discover and register for campus events, including workshops, seminars, and social gatherings.
+a platform where students can discover and register for campus events, including workshops, seminars, and social gatherings and see caladendar holidays.
 <br>
-<strong>OPEN t.html<strong>
+<strong>OPEN index.html<strong>
