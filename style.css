@@ -41,6 +41,10 @@ a.active,a:hover{
   background: #1b9bff;
   transition: .5s;
 }
+button.active,button:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
 .checkbtn{
   font-size: 30px;
   color: white;
@@ -94,7 +98,7 @@ a.active,a:hover{
 }
 
 body{
-  ;
+  
   font-weight: bold;
 }
 .heading{
@@ -187,6 +191,11 @@ a{
 font-size: small;
 text-wrap: wrap;
 }
+button{
+font-size: small;
+text-wrap: wrap;
+color: white;
+}
 .mark{
 background-color:  orangered;
 
@@ -228,7 +237,7 @@ input,textarea{
 border-style: groove ;
 background-color: aliceblue;
 color: darkgreen;
-text-size: large;
+
 padding: 7px;
 padding-right: 105px;
 font-weight: bold;
@@ -276,4 +285,8 @@ font-size: large;
   justify-content: center;
   border-collapse: collapse;
   
+}
+#Year{
+  color: black; 
+  font-weight: bold;
 }
