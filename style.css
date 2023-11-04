@@ -290,3 +290,7 @@ font-size: large;
   color: black; 
   font-weight: bold;
 }
+fieldset{
+  text-align: center;
+  
+}
