@@ -10,6 +10,7 @@ body{
   font-family: montserrat;
 }
 nav{
+  
   background: #0082e6;
   height: 80px;
   width: 100%;
@@ -160,7 +161,8 @@ background: green;
 .month{
         text-align: center;
         background: white;
-        font-size: 80px;
+        font-size: 60px;
+        padding:12px;
         letter-spacing: 1px;
         color: black;
         border:3px solid green;
@@ -170,7 +172,7 @@ table, th, td{
         width: 100%;
         table-layout: fixed;
         text-align: center;
-        font-size: 27px;
+        font-size: 25px;
         border-collapse: collapse;
         border:5px solid black;
         font-family: Elaphant;
@@ -184,8 +186,9 @@ color: white;
 font-family: arial black;
 }
 td{
-        background: #00264d;
+        background: #014a93;
         color: yellow;
+        border-collapse: collapse;
 }
 a{
 font-size: small;
@@ -196,8 +199,8 @@ font-size: small;
 text-wrap: wrap;
 color: white;
 }
-.mark{
-background-color:  orangered;
+.mark,.sun{
+background-color:  rgb(241, 88, 33);
 
 
 }
