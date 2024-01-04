@@ -143,13 +143,8 @@ font-weight: bold;
 }
 
 
-.ta{
-font-size: large;
-}
 
-td:hover{
-background: green;
-}
+
 .calender{
        
         max-width: 800px;
@@ -235,7 +230,7 @@ font-weight: bold;
 
 }
 form{
-text-align: center;
+
 padding: 3px;
 background-color: rgb(184, 238, 177);
 
