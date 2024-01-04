@@ -168,27 +168,14 @@ background: green;
         border:3px solid green;
         background-color: #37b337;
 }
-table, th, td{
-        width: 100%;
-        table-layout: fixed;
-        text-align: center;
-        font-size: 25px;
-        border-collapse: collapse;
-        border:5px solid black;
-        font-family: Elaphant;
-}
-tr, th, td{
-        padding: 20px;
-}
-th{
-background: #009900;
-color: white;
-font-family: arial black;
-}
-td{
-        background: #014a93;
-        color: yellow;
-        border-collapse: collapse;
+.fieeldset{
+ 
+
+padding: 15px;
+border: 1px solid red;
+max-width: 500px;
+margin: 10px;
+
 }
 a{
 font-size: small;
