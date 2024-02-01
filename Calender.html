@@ -8,16 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color:rgb(150, 237, 173); " onload="Renderdate()">
-    <nav>
-        <label class="logo">MIT</label>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Workshops.html">Workshops</a></li>
-            <li><a href="Seminars.html">Events</a></li>
-            <li><a href="Social.html">Social Gathering</a></li>
-            <li><a href="Calender.html">Calendar</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logo">MIT</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="Workshops.html" >Workshops</a></li>
+                <li><a href="book.html">Books</a></li>
+              
+                <li><a href="Seminars.html">Events</a></li>
+                <li><a href="Social.html">Social Gathering</a></li>
+                <li><a href="Calender.html">Calendar</a></li>
+            </ul>
+            </nav>
+            <label for="nav_check" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+        </header>
     <body style="background-color:rgb(150, 237, 173);">
        
        
@@ -73,13 +83,15 @@
                         </form>
                     </div>
                 </div> -->
+                
+                <button id="Eventt">Add Event </button>
                 <div id="modal"></div>
                 <div id="addEvent" class="addEvent">
                   <h2>Add Event</h2>
                   
                   <form id="eventForm">
                     <label for="eventTitle">Event Title</label>
-                    <input class="form" type="text" id="eventTitle " placeholder="Event Title" />
+                    <input class="form" type="text" id="eventTitle " placeholder="Event Title" required>
             
                     <label for="eventType">Event Type:</label>
                     
@@ -97,8 +109,12 @@
                     <input class="form" type="checkbox" id="reminder" name="reminder">
             
                 </form>
-                  <button id="btnSave">Save</button>
+                  <button id="btnSave" onclick="registerEvent()">Save</button>
                   <button class="btnClose">Close</button>
+                  <div id="eventList">
+                    <h2>Upcoming Events</h2>
+                    <!-- Event list will be displayed here -->
+                  </div>
                 </div>
             
                 <div id="viewEvent">

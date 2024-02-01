@@ -174,6 +174,7 @@ form label{
 
 
 /* navbar */
+/* 
 * {
   text-decoration: none;
 }
@@ -264,4 +265,4 @@ button.active,button:hover{
   #check:checked ~ ul{
     left: 0;
   }
-}
+} */

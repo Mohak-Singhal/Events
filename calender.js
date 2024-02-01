@@ -22,9 +22,6 @@ const Days = [
   "Saturday",
 ];
 dt = new Date();
-
-
-
 function Renderdate() {
     let mname = month[dt.getMonth()];
 Year = dt.getFullYear();
@@ -77,69 +74,62 @@ function movedate(mon) {
     Renderdate();
   console.log(mon);
 }
-const btn = document.getElementById('today');
- // Open modal
- btn.onclick = function () {
-  addEventForm.style.display = 'block';
-};
+// const btn = document.getElementById('today');
+//  // Open modal
+//  btn.onclick = function () {
+//   addEventForm.style.display = 'block';
+// };
 
-const modal = document.querySelector("#modal");
-const viewEventForm = document.querySelector("#viewEvent");
-const addEventForm = document.querySelector("#addEvent");
+// var modal = document.querySelector("#modal");
+// const viewEventForm = document.querySelector("#viewEvent");
+// const addEventForm = document.querySelector("#addEvent");
 
 
 // function addeve(today){
 //   viewEventForm.style.display = "block";
 // }
 
-function showModal(daynumm) {
-  clicked = daynumm;
-  const eventOfTheDay = events.find((e) => e.date == daynumm);
-  if (eventOfTheDay) {
-    //Event already Preset
-    document.querySelector("#eventText").innerText = eventOfTheDay.title;
-    viewEventForm.style.display = "block";
-  } else {
-    //Add new Event
-    addEventForm.style.display = "block";
-  }
-  modal.style.display = "block";
-}
+// function showModal(daynumm) {
+//   clicked = daynumm;
+//   const eventOfTheDay = events.find((e) => e.date == daynumm);
+//   if (eventOfTheDay) {
+//     //Event already Preset
+//     document.querySelector("#eventText").innerText = eventOfTheDay.title;
+//     viewEventForm.style.display = "block";
+//   } else {
+//     //Add new Event
+//     addEventForm.style.display = "block";
+//   }
+//   modal.style.display = "block";
+// }
 
 //Close Modal
-function closeModal() {
-  viewEventForm.style.display = "none";
-  addEventForm.style.display = "none";
-  modal.style.display = "none";
-  clicked = null;
-  loadCalendar();
-}
+// function closeModal() {
+//   viewEventForm.style.display = "none";
+//   addEventForm.style.display = "none";
+//   modal.style.display = "none";
+//   clicked = null;
+//   loadCalendar();
+// }
 
 function buttons() {
   const btnBack = document.querySelector("#btnBack");
   const btnNext = document.querySelector("#btnNext");
   const btnDelete = document.querySelector("#btnDelete");
   const btnSave = document.querySelector("#btnSave");
-  const closeButtons = document.querySelectorAll(".btnClose");
+ 
   const txtTitle = document.querySelector("#txtTitle");
 
-  btnBack.addEventListener("click", () => {
-    navigation--;
-    loadCalendar();
-  });
-  btnNext.addEventListener("click", () => {
-    navigation++;
-    loadCalendar();
-  });
-  modal.addEventListener("click", closeModal);
-  closeButtons.forEach((btn) => {
-    btn.addEventListener("click", closeModal);
-  });
-  btnDelete.addEventListener("click", function () {
-    events = events.filter((e) => e.date !== clicked);
-    localStorage.setItem("events", JSON.stringify(events));
-    closeModal();
-  });
+
+  // modal.addEventListener("click", closeModal);
+  // closeButtons.forEach((btn) => {
+  //   btn.addEventListener("click", closeModal);
+  // });
+  // btnDelete.addEventListener("click", function () {
+  //   events = events.filter((e) => e.date !== clicked);
+  //   localStorage.setItem("events", JSON.stringify(events));
+  //   closeModal();
+  // });
 
   btnSave.addEventListener("click", function () {
     if (txtTitle.value) {
@@ -156,5 +146,120 @@ function buttons() {
     }
   });
 }
+
+var today =document.querySelectorAll(".today");
+ today.forEach((today) => {
+  today.addEventListener('click',function(event){
+    console.log(event.target);
+    event.target.style.color = 'black';
+});
+});
+
+//       var todayElements = document.querySelectorAll(".today");
+// todayElements.forEach((today) => {
+//     today.addEventListener('click',function(event){
+//         console.log(event.target);
+//         event.target.style.color = 'black';
+//     });
+// });
+
+//  
+//   
+  var modal = document.querySelector("#modal");
+  const buttonaddevent=document.getElementById("Eventt")
+  var addEventForm = document.querySelector("#addEvent");
+  // var closeButtons = document.querySelectorAll(".btnClose");
+  buttonaddevent.addEventListener('click',function(e){
+    console.log("clicked");
+    modal.style.display="block"
+    addEventForm.style.display="block"
+    
+  })
+  // closeButtons.addEventListener('click',function(clickk){
+  //   console.log("clicked 1");
+  //   addEventForm.style.display="none" 
+  // })
+  var closeButtons = document.querySelectorAll(".btnClose");
+  closeButtons.forEach((btn) => {
+    btn.addEventListener('click', function(clickk){
+      console.log("clicked 1");
+      addEventForm.style.display="none" 
+      modal.style.display="none"
+    })
+  });
+
+//   function save(){
+//     localStorage.setItem("data",list.innerHTML);
+// }
+// function show(){
+//     list.innerHTML=localStorage.getItem("data");
+// }
+// show();
+// const addEventTitle = document.querySelector("#eventTitle")
+// const addEventRE = document.querySelector("#reminder")
+// const addEventDate = document.querySelector("#eventDate")
+
+// const addEventType = document.querySelector("#eventType")
+const btnSave = document.querySelector("#btnSave");
+// btnSave.addEventListener("click", () => {
+//   console.log("li")
+//   const eventTitle = addEventTitle.value;
+//   const eventTimeDate = addEventDate.value;
+//   const eventTimeRE = addEventRE.value;
+//   const EventType= addEventType.value;
+
+//   if (eventTitle === "" || eventTimeDate === "" || eventTimeRE === ""|| EventType === "") {
+//     alert("Please fill all the fields");
+//     return;
+//   }
+// });
+
+// //function to save events in local storage
+// function saveEvents() {
+//   localStorage.setItem("events", JSON.stringify(eventsArr));
+// }
+
+// //function to get events from local storage
+// function getEvents() {
+//   //check if events are already saved in local storage then return event else nothing
+//   if (localStorage.getItem("events") === null) {
+//     return;
+//   }
+//   eventsArr.push(...JSON.parse(localStorage.getItem("events")));
+// }
+
+
+// function registerEvent() {
+// const eventDate = document.getElementById('eventDate').value;
+// const eventTitle = document.getElementById('eventTitle').value;
+// const eventType = document.getElementById('eventType').value;
+// const reminder = document.getElementById('reminder').checked;
+
+//     if (eventDate && eventTitle && eventType) {
+//       const event = {
+//         date: eventDate,
+//         name: eventTitle,
+//         type: eventType,
+//         Reminder:reminder
+//       };
+  
+      
+//       saveEvent(event);
+//     // Clear form fields
+//     document.getElementById('eventDate').value = '';
+//     document.getElementById('eventTitle').value = '';
+//     document.getElementById('eventType').value = '';
+//     document.getElementById('reminder').value = '';
+
+//     // Reload events
+//     loadEvents();
+    
+//   }
+// }
+//       function saveEvent(event) {
+//         let events = JSON.parse(localStorage.getItem('events')) || [];
+//         events.push(event);
+//         localStorage.setItem('events', JSON.stringify(events));
+//       }
 
 
