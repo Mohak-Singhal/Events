@@ -4,24 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seminars</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <nav>
-        <label class="logo">MIT</label>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Workshops.html">Workshops</a></li>
-            <li><a href="Seminars.html">Events</a></li>
-            <li><a href="Social.html">Social Gathering</a></li>
-            <li><a href="Calender.html">Calendar</a></li>
-        </ul>
-    </nav>
     <header>
-    <h1 class="heading">Seminars</h1>
-</header>
+        <div class="logo">MIT</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="Workshops.html" >Workshops</a></li>
+                <li><a href="book.html">Books</a></li>
+              
+                <li><a class="active" href="Seminars.html">Events</a></li>
+                <li><a href="Social.html">Social Gathering</a></li>
+                <li><a href="Calender.html">Calendar</a></li>
+            </ul>
+            </nav>
+            <label for="nav_check" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
 
-<div class="flex">
+            
+        </header>
+
+
+<div class="container">
+    <div class="item-container">
+        <div class="img-container">
+            <img src="td.jpg" alt="Event image" height="500">
+        </div>
+
+        <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+                <p class="title">Seminar on Trading and Finance</p>
+                <div class="separator"></div>
+                <p class="info">Trading and Finance</p>
+                <p class="price">Free</p>
+
+                <div class="additional-info">
+                    <p class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        AB-5 205
+                    </p>
+                    <p class="info">
+                        <i class="far fa-calendar-alt"></i>
+                        November 5, 2023, 3:00 PM - 5:00 PM
+                    </p>
+
+                    <p class="info description">
+                        Discover the future of technology and data science by delving into Artificial Intelligence and Machine Learning, where you'll learn to build smart systems and analyze data for real-world applications. <span>more...</span>
+                    </p>
+                </div>
+            </div>
+            <button class="action" onclick="location.href='event.html'">Register</button>
+        </div>
+    </div>
+    <div class="item-container">
+        <div class="img-container">
+            <img src="ai.jpg" alt="Event image" height="500">
+        </div>
+
+        <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+                <p class="title">Seminar on AI and Machine Learning</p>
+                <div class="separator"></div>
+                <p class="info">AI ML</p>
+                <p class="price">Free</p>
+
+                <div class="additional-info">
+                    <p class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        AB-5 205
+                    </p>
+                    <p class="info">
+                        <i class="far fa-calendar-alt"></i>
+                        November 5, 2023, 3:00 PM - 5:00 PM
+                    </p>
+
+                    <p class="info description">
+                        Discover the future of technology and data science by delving into Artificial Intelligence and Machine Learning, where you'll learn to build smart systems and analyze data for real-world applications. <span>more...</span>
+                    </p>
+                </div>
+            </div>
+            <button class="action" onclick="location.href='event.html'">Register</button>
+        </div>
+    </div>
+    <div class="item-container">
+        <div class="img-container">
+            <img src="p.jpg" alt="Event image" height="500">
+        </div>
+
+        <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+                <p class="title">Seminar on Philosophy</p>
+                <div class="separator"></div>
+                <p class="info">Philosophy</p>
+                <p class="price">Free</p>
+
+                <div class="additional-info">
+                    <p class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        AB-3 104
+                    </p>
+                    <p class="info">
+                        <i class="far fa-calendar-alt"></i>
+                         November 5, 2023  3:00 PM - 5:00 PM
+                    </p>
+
+                    <p class="info description">
+                        Description: Embark on a thought-provoking journey to explore the fundamental questions of existence, morality, and knowledge through the study of philosophy<span>more...</span>
+                    </p>
+                </div>
+            </div>
+            <button class="action" onclick="location.href='event1.html'">Register</button>
+        </div>
+    </div>
+   
+            </div>
+           
+    </div>
+    </div>
+    <div>
+<!-- <div class="flex">
     <div class="fieeldset">
         <div>
 
@@ -60,6 +174,7 @@
         <button class="register" onclick="location.href='event.html'">Register</button>
        </div>
     </div>
+</div> -->
     </div> 
 </body>
 </html>
