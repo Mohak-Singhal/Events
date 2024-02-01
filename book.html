@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.CSS">
+    <link rel="stylesheet" href="book.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <title>Workshops</title>
+</head>
+<body>
+    <header>
+    <div class="logo">MTTN</div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Workshops.html" >Workshops</a></li>
+            <li><a href="book.html">Books</a></li>
+          
+            <li><a href="Seminars.html">Events</a></li>
+            <li><a href="Social.html">Social Gathering</a></li>
+            <li><a href="Calender.html">Calendar</a></li>
+        </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
+  
+<div class="wrapper">
+    <div class="buttons">
+        <button class="button" data-id='All'>All</button>
+        <button class="button" data-id='Non-fiction'>Fiction</button>
+        <button class="button" data-id='Fiction'>Non-fiction</button>
+         <input type="search" class="search" placeholder="Search title or Genre...">
+         <button class="btnsearch">Search</button>
+    </div>
+</div>
+    <main>
+   <div class="container">
+    <div class="book_wrapper">
+        <div class="books">
+            <div class="image">
+                <img src="das.jpg" alt="">
+            </div>
+            <div class="info">
+                <h3 class="title">Forza </h3>
+                    <p class="date">19 Dec</p>
+                    <p class="price">200</p>
+            </div>
+        </div>
+    </div>
+   </div>
+</main>
+
+</div>
+<!-- <div class="rating-box">
+    <header>How was your experience?</header>
+    <div class="stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div> -->
+<script src="book.js"></script>
+</body>
+</html>

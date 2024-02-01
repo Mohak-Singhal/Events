@@ -3,74 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.CSS">
     <title>Workshops</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+    <div class="logo">MIT</div>
+    <input type="checkbox" id="nav_check" hidden>
     <nav>
-        <label class="logo">MIT</label>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Workshops.html">Workshops</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Workshops.html" >Workshops</a></li>
+            <li><a href="book.html">Books</a></li>
+          
             <li><a href="Seminars.html">Events</a></li>
             <li><a href="Social.html">Social Gathering</a></li>
             <li><a href="Calender.html">Calendar</a></li>
         </ul>
-    </nav>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    <div class="container">
+        <div class="item-container">
+            <div class="img-container">
+                <img src="w.jpg" alt="Event image" height="500">
+            </div>
 
-    <header>
-    <h1 class="heading">Upcoming Workshops</h1>
-</header>
+            <div class="body-container">
+                <div class="overlay"></div>
 
-<div class="flex">
-    <div class="fieeldset">
-        <div>
+                <div class="event-info">
+                    <p class="title">Web App-Dev Workshop</p>
+                    <div class="separator"></div>
+                    <p class="info">Html Css Js</p>
+                    <p class="price">Free</p>
 
-        <h2 class="title"">Web and App  Dev Workshop</h2>
-        <br>
-        <img src="w.jpg" alt="Web and App  Dev Workshop" width="200" height="300">
-        <p>Date: 1 November  2023</p>
-        <p>Time: 3:00 PM - 5:00 PM</p>
-        <br>
-        <p>Description: Unlock the world of web and app development in this hands-on workshop where you'll learn to create dynamic websites and mobile applications, setting the foundation for your digital future.</p>
-        <br>
-        <button class="register" onclick="location.href='event.html'">Register</button>
-        
-        
-       </div>
-    </div>
-</div>
-    <div class="fieeldset">
-        <h2 class="title">Dance Workshop</h2>
-        <br>
-        <img src="da.jpg" alt="Dance" width="200" height="250">
-        <p>Date: 1 November , 2023</p>
-        <p>Time: 3:00 PM - 5:00 PM</p>
-        <br>
-        <p>Description: Discover the art of expression and movement in our dynamic dance workshop, where you'll groove to diverse rhythms and unlock your inner dancer's potential."
-        </p>
-        <br>
-        <button class="register" onclick="location.href='event.html'">Register</button>
-       </div>
-    </div>
-</div>
-        <div class="fieeldset">
-        
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            AB-5 205
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            Sat, Sep 19, 10:00 AM 
+                        </p>
 
-            <h2 class="title">Data Science Workshop</h2>
-            <br>
-        <img src="das.jpg" alt="Dance" width="200" height="250">
-
-        <p><b>Date: 14 January , 2024 </b></p>
-        <p><b>Time: 10:00 AM - 12:00 PM </b></p>
-        <br>
-            <p >Description: "Explore data science and machine learning in this comprehensive workshop. Learn to analyze data and build models.</p>
-            <br>
-            
-            <button class="register" onclick="location.href='event.html'">Register</button>
+                        <p class="info description">
+                            Unlock the world of web and app development in this hands-on workshop where you'll learn to create dynamic websites and mobile applications, setting the foundation for your digital future <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action" onclick="location.href='event.html'">Register</button>
+            </div>
         </div>
-    </div>
-    <d/iv>
+        <div class="item-container">
+            <div class="img-container">
+                <img src="da.jpg" alt="Event image" height="500">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Dance Workshop</p>
+                    <div class="separator"></div>
+                    <p class="info">Garba Bangra Classical</p>
+                    <p class="price">Free</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            AB-3 104
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            1 November , 2023 3:00 PM - 5:00 PM 
+                        </p>
+
+                        <p class="info description">
+                            Discover the art of expression and movement in our dynamic dance workshop, where you'll groove to diverse rhythms and unlock your inner dancer's potential."<span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action" onclick="location.href='event1.html'">Register</button>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="img-container">
+                <img src="das.jpg" alt="Event image" height="500">
+            </div>
+
+            <div class="body-container">
+                <div class="overlay"></div>
+
+                <div class="event-info">
+                    <p class="title">Data Science Workshop</p>
+                    <div class="separator"></div>
+                    <p class="info">python bi</p>
+                    <p class="price">Free</p>
+
+                    <div class="additional-info">
+                        <p class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            AB2-103
+                        </p>
+                        <p class="info">
+                            <i class="far fa-calendar-alt"></i>
+                            14 January , 2024 10:00 AM - 12:00 PM
+                        </p>
+
+                        <p class="info description">
+                            Explore data science and machine learning in this comprehensive workshop. Learn to analyze data and build models <span>more...</span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action" onclick="location.href='event3.html'">Register</button>
+            </div>
+        </div>
+        </div>
+
 
 </body>
 </html>
