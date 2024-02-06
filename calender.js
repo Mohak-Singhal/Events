@@ -200,7 +200,7 @@ var today =document.querySelectorAll(".today");
 // const addEventDate = document.querySelector("#eventDate")
 
 // const addEventType = document.querySelector("#eventType")
-const btnSave = document.querySelector("#btnSave");
+// const btnSave = document.querySelector("#btnSave");
 // btnSave.addEventListener("click", () => {
 //   console.log("li")
 //   const eventTitle = addEventTitle.value;

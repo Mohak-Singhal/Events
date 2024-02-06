@@ -1,4 +1,4 @@
-/* nav */
+nav
 
 * {
     margin: 0;
@@ -10,9 +10,98 @@
   }
   body {
     background: dodgerblue;
+    background-image: url("img/istockphoto-1218737747-612x612.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+/* Sections */
+section {
+  position: relative;
+  height: 130vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.section-inner {
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  max-width: 560px;
+}
+
+.section-inner h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.section-inner h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both;
+}
+
+.section-inner a {
+  animation: fadeInUp 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both;}
+  /* Background images */
+  .section-a {
+    background-image: url("../img/mttn.jpg");
+    background-size: cover; /* This ensures that the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+  }
+
+  
+  /* Footer */
+  footer {
+    position: relative;
+    padding: 20px 0;
+    background: black;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  footer ul li {
+    margin-right: 30px;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 2.5;
+  }
+
+  footer ul li a {
+    color: #fff;
+    transition: color 0.6s;
+  }
+
+  footer ul li a:hover {
+    color: #aaa;
   }
   header {
-    background: antiquewhite;
+    background: white;
     width: 100%;
     height: 70px;
     display: flex;
@@ -85,7 +174,7 @@
 }
 /* nav */
 /* ITEM */
-bo7dy{
+/* body{
     min-height: 100vh;
     width: 100%;
     font-size: 16px;
@@ -94,7 +183,7 @@ bo7dy{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 .container {
     width: 100%;
     
@@ -215,34 +304,29 @@ bo7dy{
 .action:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
-/* ITEM */
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+
 .column {
     float: left;
     width: 33.33%;
     padding: 5px;
     }
     
-    /* Clear floats after image containers */
+    
     .row::after {
     content: "";
     clear: both;
     display: table;
     }
-    .home{
+    /* .home{
     align-items: center;
     text-align: center;
-    background-color: #6197de;
+    background-color: dodgerblue;
     
     }
     .home p{
       padding: 15px;
-    }
-    footer{
-    text-align: center;
-    background-color: #6197de;
-    }
-
+    } */
+   
     .book_wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -250,19 +334,36 @@ bo7dy{
         grid-gap: 20px;
       }
       .wrapper{
-        display: flex;
+        display: grid;
         margin:30px;
-        
+        background-color: white; 
+        padding: 20px;"
       }
+      
       .buttons button{
         border:2px solid black;
         padding: 10px 22px;
         border-radius: 25px;
         background-color: transparent;
-        color: #fff;
+        color: #000;
         font-size: 15px;
         margin-right: 20px;
       }
+      .search{
+        background-color: transparent;
+        padding: 10px 3px;
+        border-radius: 15px;
+        margin-right: 20px;
+        margin-left: 482px;
+      }
+      /* .search,.btnsearch  {
+        background-color: transparent;
+        /* margin-left: 380px; */
+       /* margin: 20px; */
+       float:inline-end;
+        /* border-bottom: 2px solid #110f29; */
+        padding: 1em 0.3em;
+      } */
       .books {
         background-color: #fff;
         border-radius: 5px;
@@ -313,4 +414,273 @@ bo7dy{
         color: darkorange;
       }
       
+/* calender */
+      body {
+        margin: 0px;
+      }
+      @media (max-width: 856px) {
+        .calender,
+        .dayname,
+        .month,
+        #month,
+        #year,
+        .prev,
+        .next {
+          font-size: 40px;
+        }
+      }
+      :root {
+        --today: blue; /*#2c3e50; */
+        --todaycolor: white;
+        --calcolor: #37b337;
+        --calback: white;
+        --day: #009900;
+        --dayh: rgba(255, 0, 0, 0.789);
+        --pre: gray;
+      }
+      .calender {
+        background-color: var(--color);
+        max-width: 900px;
       
+        font-family: "Segoe UI", Tahoma, Verdana, sans-serif serif;
+      
+        font-weight: bold;
+        color: black;
+        margin-left: 20px;
+      
+        margin-top: 20px;
+        box-shadow: 1px 1px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      .prev,
+      .next {
+        height: 30px;
+        width: 30px;
+        border-radius: 20%;
+      }
+      .prev {
+        margin-right: 58px;
+      }
+      .next {
+        margin-left: 38px;
+      }
+      .prev,
+      .next:hover {
+        cursor: pointer;
+      }
+      
+      .month {
+        text-align: center;
+      
+        font-size: 50px;
+      
+        background-color: var(--calcolor);
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      
+      .dayname {
+        background-color: var(--day);
+        display: flex;
+        padding: 7px;
+      }
+      .dayname div {
+        flex-wrap: wrap;
+        padding: 20px;
+        flex-direction: row;
+      }
+      .days {
+        display: flex;
+        flex-wrap: wrap;
+      
+        background-color: var(--calback);
+        height: 500px;
+        padding: 10px;
+      }
+      .days div {
+        width: 14%;
+      }
+      .days div:hover {
+        background-color: var(--dayh);
+        cursor: pointer;
+      }
+      .today {
+        background-color: var(--today);
+        color: var(--todaycolor);
+      }
+      
+      .nextdate,
+      .prevdate {
+        color: var(--pre);
+      }
+      
+       
+      #modal {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 180vh;
+        z-index: 10;
+      
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      
+      #addEvent,#viewEvent {
+        display: none;
+        width: 350px;
+        color:#fff;
+        background-color: #0d993b;
+        text-align: center;
+        padding: 25px;
+        position: absolute;
+        z-index: 20;
+      }
+      
+      #addEvent h2,
+      #viewEvent h2 {
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      #addEvent h2{
+        color: white;
+        text-align: center;
+      }
+      
+       .form,#eventForm{
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #cbd4c2;
+        font-size: 16px;
+        background-color: #fff;
+      }
+      form label{
+       color: #2c3e50;
+      }
+      #btnSave {
+        background-color: #2ed573;
+      }
+      
+      .btnClose {
+        background-color: #2f3542;
+      }
+      
+      .event {
+        font-size: 10px;
+        padding: 3px;
+        background-color: #3d3d3d;
+        color: #fff;
+        border-radius: 5px;
+        max-height: 55px;
+        overflow: hidden;
+      }
+      
+      .event.holiday {
+        background-color: palegreen;
+        color: #3d3d3d;
+      }
+      
+      
+      /* navbar */
+      /* 
+      * {
+        text-decoration: none;
+      }
+      nav{
+        
+        background: #0082e6;
+        height: 80px;
+        width: 100%;
+      }
+      label.logo{
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+      }
+       nav ul{ 
+        float: right;
+        margin-right: 20px;
+       } 
+      nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 15px;
+      }
+      nav ul li a{
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+      }
+      a.active,a:hover{
+        background: #1b9bff;
+        transition: .5s;
+      }
+      button.active,button:hover{
+        background: #1b9bff;
+        transition: .5s;
+      }
+      .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+      }
+      #check{
+        display: none;
+      }
+      @media (max-width: 952px){
+        label.logo{
+          font-size: 30px;
+          padding-left: 50px;
+        }
+        nav ul li a{
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 858px){
+        .checkbtn{
+          display: block;
+        }
+        ul{
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: #2c3e50;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+        }
+        nav ul li{
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        nav ul li a{
+          font-size: 20px;
+        }
+        a:hover,a.active{
+          background: none;
+          color: #0082e6;
+        }
+        #check:checked ~ ul{
+          left: 0;
+        }
+      } */
+/* calander       */
